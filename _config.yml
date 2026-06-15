@@ -1,0 +1,26 @@
+title: Crash-Py
+description: >-
+  Python for Maths Teachers — a practical crash course in Python using
+  Visual Studio Code and Homebrew on macOS.
+
+email: ""
+url: "https://granarydwellers.github.io"
+baseurl: "/Crash-Py"
+
+theme: minima
+
+minima:
+  skin: classic
+
+header_pages:
+  - lessons/index.md
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Show excerpts on the home page
+show_excerpts: true

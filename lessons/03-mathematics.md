@@ -1,0 +1,168 @@
+---
+layout: page
+title: "Lesson 3: Mathematical Operations"
+permalink: /lessons/03-mathematics/
+---
+
+## Introduction
+
+**What this lesson is about**
+
+Python is an excellent calculator.  This lesson covers how Python represents
+numbers, the arithmetic operators it supports, and how to build useful maths
+functions — specifically Pythagoras' theorem functions that will feel immediately
+relevant to a maths teacher.
+
+**Why you need this**
+
+Understanding Python's number types and operators is the foundation of any
+quantitative work — statistics, data analysis, graph plotting — all of which
+appear in later lessons.  Writing Pythagoras functions is also a natural first
+exercise in combining maths knowledge with the functions you learned in Lesson 2.
+
+---
+
+## Do
+
+### Step 1 — Number types
+
+Python has two main numeric types:
+
+| Type | Example | Notes |
+|---|---|---|
+| `int` | `5`, `-3`, `0` | Whole numbers, no decimal point |
+| `float` | `3.14`, `-0.5` | Numbers with a decimal point |
+
+```python
+a = 10       # int
+b = 3.5      # float
+print(type(a))   # <class 'int'>
+print(type(b))   # <class 'float'>
+```
+
+---
+
+### Step 2 — Arithmetic operators
+
+```python
+print(5 + 3)    # Addition       → 8
+print(10 - 4)   # Subtraction    → 6
+print(3 * 7)    # Multiplication → 21
+print(15 / 4)   # Division       → 3.75  (always returns float)
+print(15 // 4)  # Floor division → 3     (drops the decimal)
+print(15 % 4)   # Modulo         → 3     (remainder)
+print(2 ** 8)   # Exponentiation → 256
+```
+
+> **Key point:** `/` always gives a `float`.  `//` gives an `int` (rounded
+> *down*).
+
+---
+
+### Step 3 — The `math` module
+
+Python's built-in `math` module provides many useful functions:
+
+```python
+import math
+
+print(math.sqrt(16))      # 4.0  — square root
+print(math.pi)            # 3.141592...
+print(math.floor(3.9))    # 3  — round down
+print(math.ceil(3.1))     # 4  — round up
+print(math.fabs(-7))      # 7.0 — absolute value
+```
+
+---
+
+### Step 4 — Pythagoras: find the hypotenuse
+
+Pythagoras' theorem states that for a right-angled triangle:
+
+> **c² = a² + b²**
+
+So the hypotenuse `c` is `√(a² + b²)`.
+
+```python
+import math
+
+def hypotenuse(a, b):
+    """Return the length of the hypotenuse given the two shorter sides."""
+    return math.sqrt(a**2 + b**2)
+
+print(hypotenuse(3, 4))    # 5.0
+print(hypotenuse(5, 12))   # 13.0
+```
+
+---
+
+### Step 5 — Pythagoras: find a shorter side
+
+If you know the hypotenuse `c` and one shorter side `a`, the other short side is:
+
+> **b = √(c² − a²)**
+
+```python
+def shorter_side(hyp, a):
+    """Return the missing shorter side given the hypotenuse and one side."""
+    return math.sqrt(hyp**2 - a**2)
+
+print(shorter_side(5, 3))    # 4.0
+print(shorter_side(13, 5))   # 12.0
+```
+
+---
+
+### Step 6 — Named arguments and rounding
+
+Bring both functions together and add rounding for cleaner output:
+
+```python
+import math
+
+def hypotenuse(a, b):
+    return math.sqrt(a**2 + b**2)
+
+def shorter_side(hyp, a):
+    return math.sqrt(hyp**2 - a**2)
+
+# Named arguments make the call self-documenting
+c = hypotenuse(a=3, b=4)
+print(f"Hypotenuse: {c:.4f}")        # 4 decimal places
+
+b = shorter_side(hyp=13, a=5)
+print(f"Short side: {round(b, 2)}")  # round() built-in
+```
+
+---
+
+### Step 7 — Order of operations
+
+Python follows standard BODMAS / BIDMAS rules.  Use parentheses to be explicit:
+
+```python
+print(2 + 3 * 4)    # 14  (multiplication first)
+print((2 + 3) * 4)  # 20  (brackets first)
+```
+
+> **Download:** [pythagoras.py]({{ site.baseurl }}/resources/lesson-03/pythagoras.py)
+
+---
+
+## Explore
+
+1. Write a function `circle_area(radius)` that returns the area of a circle.
+   Use `math.pi`.
+2. What is `7 % 3`?  What does the modulo operator tell you in practical terms
+   — for example, how could you use it to check if a year is a leap year?
+3. The `round()` function takes an optional second argument: `round(3.14159, 2)`
+   gives `3.14`.  Experiment with rounding to different numbers of decimal places.
+4. Write a function `is_right_triangle(a, b, c)` that returns `True` if the
+   three sides form a right-angled triangle, and `False` otherwise.
+5. What happens when you try `math.sqrt(-1)`?  Python has a `cmath` (complex
+   math) module — can you find out how to compute complex square roots?
+
+---
+
+[← Lesson 2]({{ site.baseurl }}/lessons/02-functions/)
+[Next Lesson: Strings →]({{ site.baseurl }}/lessons/04-strings/)
