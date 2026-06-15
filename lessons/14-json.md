@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 11: JSON"
-permalink: /lessons/11-json/
+title: "Lesson 14: JSON"
+permalink: /lessons/14-json/
 ---
 
 ## Introduction
@@ -145,8 +145,8 @@ Open `marksheet.json` in VS Code.  Press `⌘ Shift P` and search for
 **"Format Document"** — VS Code will pretty-print the JSON and highlight the
 structure.
 
-> **Download:** [json_example.py]({{ site.baseurl }}/resources/lesson-11/json_example.py)
-> **Download:** [marksheet.json]({{ site.baseurl }}/resources/lesson-11/marksheet.json)
+> **Download:** [json_example.py]({{ site.baseurl }}/resources/lesson-14/json_example.py)
+> **Download:** [marksheet.json]({{ site.baseurl }}/resources/lesson-14/marksheet.json)
 
 ---
 
@@ -172,5 +172,5 @@ structure.
 
 ---
 
-[← Lesson 10]({{ site.baseurl }}/lessons/10-markdown/)
-[Next Lesson: Unit Testing →]({{ site.baseurl }}/lessons/12-unit-testing/)
+[← Lesson 13]({{ site.baseurl }}/lessons/13-markdown/)
+[Next Lesson: Unit Testing →]({{ site.baseurl }}/lessons/15-unit-testing/)

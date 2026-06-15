@@ -141,13 +141,16 @@ Install the **Python extension** (Mac and Windows):
 
 ### Step 4 — Create a project folder
 
+It is good practice to keep all your projects inside a `projects` folder in
+your home directory so they are easy to find.
+
 #### Mac
 
 In Terminal:
 
 ```bash
-mkdir ~/crash-py
-cd ~/crash-py
+mkdir -p ~/projects/crash-py
+cd ~/projects/crash-py
 ```
 
 #### Windows
@@ -155,8 +158,8 @@ cd ~/crash-py
 In Command Prompt:
 
 ```cmd
-mkdir %USERPROFILE%\crash-py
-cd %USERPROFILE%\crash-py
+mkdir %USERPROFILE%\projects\crash-py
+cd %USERPROFILE%\projects\crash-py
 ```
 
 ---
@@ -190,7 +193,7 @@ Save the file (`⌘ S` on Mac, `Ctrl S` on Windows).
 
 ### Step 6 — Run the script (Mac)
 
-In Terminal (make sure you are in the `~/crash-py` folder):
+In Terminal (make sure you are in the `~/projects/crash-py` folder):
 
 ```bash
 python3 hello_world.py
@@ -215,7 +218,7 @@ Hello, World!
 2. Navigate to your project folder:
 
 ```cmd
-cd %USERPROFILE%\crash-py
+cd %USERPROFILE%\projects\crash-py
 ```
 
 3. Run the script:

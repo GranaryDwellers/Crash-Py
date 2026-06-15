@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 5: Lists"
-permalink: /lessons/05-lists/
+title: "Lesson 7: Lists"
+permalink: /lessons/07-lists/
 ---
 
 ## Introduction
@@ -150,7 +150,7 @@ print(squares)
 
 This is equivalent to the loop above but shorter.
 
-> **Download:** [lists.py]({{ site.baseurl }}/resources/lesson-05/lists.py)
+> **Download:** [lists.py]({{ site.baseurl }}/resources/lesson-07/lists.py)
 
 ---
 
@@ -170,5 +170,5 @@ This is equivalent to the loop above but shorter.
 
 ---
 
-[← Lesson 4a]({{ site.baseurl }}/lessons/04a-text-files/)
-[Next Lesson: Decisions →]({{ site.baseurl }}/lessons/06-decisions/)
+[← Lesson 6]({{ site.baseurl }}/lessons/06-text-files/)
+[Next Lesson: Decisions →]({{ site.baseurl }}/lessons/08-decisions/)

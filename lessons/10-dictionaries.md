@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 8: Dictionaries"
-permalink: /lessons/08-dictionaries/
+title: "Lesson 10: Dictionaries"
+permalink: /lessons/10-dictionaries/
 ---
 
 ## Introduction
@@ -150,7 +150,7 @@ d.update(d2)               # merge d2 into d
 print(d)
 ```
 
-> **Download:** [dictionaries.py]({{ site.baseurl }}/resources/lesson-08/dictionaries.py)
+> **Download:** [dictionaries.py]({{ site.baseurl }}/resources/lesson-10/dictionaries.py)
 
 ---
 
@@ -169,5 +169,5 @@ print(d)
 
 ---
 
-[← Lesson 7]({{ site.baseurl }}/lessons/07-for-loops/)
-[Next Lesson: Excel Files →]({{ site.baseurl }}/lessons/09-excel-files/)
+[← Lesson 9]({{ site.baseurl }}/lessons/09-for-loops/)
+[Next Lesson: Excel Files →]({{ site.baseurl }}/lessons/11-excel-files/)

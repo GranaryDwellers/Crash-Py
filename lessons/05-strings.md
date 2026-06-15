@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 4: Strings"
-permalink: /lessons/04-strings/
+title: "Lesson 5: Strings"
+permalink: /lessons/05-strings/
 ---
 
 ## Introduction
@@ -145,7 +145,7 @@ print("Score: " + str(score))   # Score: 95
 print(f"Score: {score}, Grade: {grade}")
 ```
 
-> **Download:** [strings.py]({{ site.baseurl }}/resources/lesson-04/strings.py)
+> **Download:** [strings.py]({{ site.baseurl }}/resources/lesson-05/strings.py)
 
 ---
 
@@ -166,5 +166,5 @@ print(f"Score: {score}, Grade: {grade}")
 
 ---
 
-[← Lesson 3]({{ site.baseurl }}/lessons/03-mathematics/)
-[Next Lesson: Text Files →]({{ site.baseurl }}/lessons/04a-text-files/)
+[← Lesson 4]({{ site.baseurl }}/lessons/04-math-library/)
+[Next Lesson: Text Files →]({{ site.baseurl }}/lessons/06-text-files/)

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 6: Decisions"
-permalink: /lessons/06-decisions/
+title: "Lesson 8: Decisions"
+permalink: /lessons/08-decisions/
 ---
 
 ## Introduction
@@ -151,7 +151,7 @@ print(classify_triangle(5, 5, 8))   # Isosceles
 print(classify_triangle(3, 4, 5))   # Scalene
 ```
 
-> **Download:** [decisions.py]({{ site.baseurl }}/resources/lesson-06/decisions.py)
+> **Download:** [decisions.py]({{ site.baseurl }}/resources/lesson-08/decisions.py)
 
 ---
 
@@ -172,5 +172,5 @@ print(classify_triangle(3, 4, 5))   # Scalene
 
 ---
 
-[← Lesson 5]({{ site.baseurl }}/lessons/05-lists/)
-[Next Lesson: For Loops →]({{ site.baseurl }}/lessons/07-for-loops/)
+[← Lesson 7]({{ site.baseurl }}/lessons/07-lists/)
+[Next Lesson: For Loops →]({{ site.baseurl }}/lessons/09-for-loops/)

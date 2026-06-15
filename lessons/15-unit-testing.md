@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 12: Unit Testing"
-permalink: /lessons/12-unit-testing/
+title: "Lesson 15: Unit Testing"
+permalink: /lessons/15-unit-testing/
 ---
 
 ## Introduction
@@ -168,8 +168,8 @@ def test_hypotenuse_parametrised(a, b, expected):
     assert hypotenuse(a, b) == expected
 ```
 
-> **Download:** [pythagoras.py]({{ site.baseurl }}/resources/lesson-12/pythagoras.py)
-> **Download:** [test_pythagoras.py]({{ site.baseurl }}/resources/lesson-12/test_pythagoras.py)
+> **Download:** [pythagoras.py]({{ site.baseurl }}/resources/lesson-15/pythagoras.py)
+> **Download:** [test_pythagoras.py]({{ site.baseurl }}/resources/lesson-15/test_pythagoras.py)
 
 ---
 
@@ -186,5 +186,5 @@ def test_hypotenuse_parametrised(a, b, expected):
 
 ---
 
-[← Lesson 11]({{ site.baseurl }}/lessons/11-json/)
-[Next Lesson: Requests →]({{ site.baseurl }}/lessons/13-requests/)
+[← Lesson 14]({{ site.baseurl }}/lessons/14-json/)
+[Next Lesson: Try / Except →]({{ site.baseurl }}/lessons/16-try-except/)

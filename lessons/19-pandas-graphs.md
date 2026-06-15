@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 15: Pandas Graphs"
-permalink: /lessons/15-pandas-graphs/
+title: "Lesson 19: Pandas Graphs"
+permalink: /lessons/19-pandas-graphs/
 ---
 
 ## Introduction
@@ -35,7 +35,7 @@ pip3 install matplotlib
 
 This lesson uses the student scores dataset.
 
-> **Download:** [student_scores.csv]({{ site.baseurl }}/resources/lesson-09a/student_scores.csv)
+> **Download:** [student_scores.csv]({{ site.baseurl }}/resources/lesson-12/student_scores.csv)
 
 ---
 
@@ -166,7 +166,7 @@ plt.savefig("combined.png", dpi=150)
 plt.show()
 ```
 
-> **Download:** [pandas_graphs.py]({{ site.baseurl }}/resources/lesson-15/pandas_graphs.py)
+> **Download:** [pandas_graphs.py]({{ site.baseurl }}/resources/lesson-19/pandas_graphs.py)
 
 ---
 
@@ -186,5 +186,5 @@ plt.show()
 
 ---
 
-[← Lesson 14]({{ site.baseurl }}/lessons/14-pandas/)
+[← Lesson 18]({{ site.baseurl }}/lessons/18-pandas/)
 [Back to All Lessons]({{ site.baseurl }}/lessons/)

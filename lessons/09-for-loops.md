@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 7: For Loops with Range"
-permalink: /lessons/07-for-loops/
+title: "Lesson 9: For Loops with Range"
+permalink: /lessons/09-for-loops/
 ---
 
 ## Introduction
@@ -146,7 +146,7 @@ for n in range(2, 50):
 print(primes)
 ```
 
-> **Download:** [for_loops.py]({{ site.baseurl }}/resources/lesson-07/for_loops.py)
+> **Download:** [for_loops.py]({{ site.baseurl }}/resources/lesson-09/for_loops.py)
 
 ---
 
@@ -166,5 +166,5 @@ print(primes)
 
 ---
 
-[← Lesson 6]({{ site.baseurl }}/lessons/06-decisions/)
-[Next Lesson: Dictionaries →]({{ site.baseurl }}/lessons/08-dictionaries/)
+[← Lesson 8]({{ site.baseurl }}/lessons/08-decisions/)
+[Next Lesson: Dictionaries →]({{ site.baseurl }}/lessons/10-dictionaries/)

@@ -145,6 +145,70 @@ print(2 + 3 * 4)    # 14  (multiplication first)
 print((2 + 3) * 4)  # 20  (brackets first)
 ```
 
+---
+
+### Step 8 — Numeric type gotchas
+
+Python's number types have some important quirks you should know before using
+them for serious maths work.
+
+**Float precision**
+
+Floats are stored in binary, which cannot represent some decimal fractions
+exactly.  This leads to surprising results:
+
+```python
+print(0.1 + 0.2)       # 0.30000000000000004  (not exactly 0.3!)
+print(0.1 + 0.2 == 0.3)  # False
+```
+
+To compare floats, use `math.isclose()` instead of `==`:
+
+```python
+import math
+print(math.isclose(0.1 + 0.2, 0.3))   # True
+```
+
+**Division always returns a float**
+
+```python
+print(10 / 2)    # 5.0 — not 5
+print(type(10 / 2))   # <class 'float'>
+```
+
+If you need a whole-number result, use `//` (floor division):
+
+```python
+print(10 // 3)   # 3  (rounds down)
+print(-7 // 2)   # -4 (rounds towards negative infinity!)
+```
+
+**Mixed arithmetic promotes to float**
+
+```python
+print(type(3 + 2))      # <class 'int'>   — int + int → int
+print(type(3 + 2.0))    # <class 'float'> — int + float → float
+```
+
+**Integers have unlimited precision**
+
+Unlike many languages, Python integers can be arbitrarily large with no
+overflow:
+
+```python
+print(2 ** 100)   # 1267650600228229401496703205376 — exact!
+```
+
+**Converting between types**
+
+Use `int()` and `float()` to convert explicitly:
+
+```python
+x = int(3.9)    # 3  — truncates (does NOT round)
+y = float(7)    # 7.0
+z = int("42")   # 42 — works on numeric strings too
+```
+
 > **Download:** [pythagoras.py]({{ site.baseurl }}/resources/lesson-03/pythagoras.py)
 
 ---
@@ -165,4 +229,4 @@ print((2 + 3) * 4)  # 20  (brackets first)
 ---
 
 [← Lesson 2]({{ site.baseurl }}/lessons/02-functions/)
-[Next Lesson: Strings →]({{ site.baseurl }}/lessons/04-strings/)
+[Next Lesson: The `math` Library →]({{ site.baseurl }}/lessons/04-math-library/)

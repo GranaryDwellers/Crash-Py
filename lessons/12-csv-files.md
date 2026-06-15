@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 9a: CSV Files"
-permalink: /lessons/09a-csv-files/
+title: "Lesson 12: CSV Files"
+permalink: /lessons/12-csv-files/
 ---
 
 ## Introduction
@@ -28,7 +28,7 @@ datasets you will encounter in later lessons are provided in CSV format.
 
 This lesson uses the same student scores dataset from Lesson 9, but in CSV format.
 
-> **Download:** [student_scores.csv]({{ site.baseurl }}/resources/lesson-09a/student_scores.csv)
+> **Download:** [student_scores.csv]({{ site.baseurl }}/resources/lesson-12/student_scores.csv)
 
 Open it in a text editor to see its structure:
 
@@ -149,7 +149,7 @@ wb.save("student_scores_from_csv.xlsx")
 print("Excel file created.")
 ```
 
-> **Download:** [csv_files.py]({{ site.baseurl }}/resources/lesson-09a/csv_files.py)
+> **Download:** [csv_files.py]({{ site.baseurl }}/resources/lesson-12/csv_files.py)
 
 ---
 
@@ -170,5 +170,5 @@ print("Excel file created.")
 
 ---
 
-[← Lesson 9]({{ site.baseurl }}/lessons/09-excel-files/)
-[Next Lesson: Markdown →]({{ site.baseurl }}/lessons/10-markdown/)
+[← Lesson 11]({{ site.baseurl }}/lessons/11-excel-files/)
+[Next Lesson: Markdown →]({{ site.baseurl }}/lessons/13-markdown/)

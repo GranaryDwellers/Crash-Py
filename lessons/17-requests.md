@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 13: Requests"
-permalink: /lessons/13-requests/
+title: "Lesson 17: Requests"
+permalink: /lessons/17-requests/
 ---
 
 ## Introduction
@@ -144,7 +144,7 @@ for q in data["results"]:
     print()
 ```
 
-> **Download:** [requests_example.py]({{ site.baseurl }}/resources/lesson-13/requests_example.py)
+> **Download:** [requests_example.py]({{ site.baseurl }}/resources/lesson-17/requests_example.py)
 
 ---
 
@@ -163,5 +163,5 @@ for q in data["results"]:
 
 ---
 
-[← Lesson 12]({{ site.baseurl }}/lessons/12-unit-testing/)
-[Next Lesson: Pandas →]({{ site.baseurl }}/lessons/14-pandas/)
+[← Lesson 16]({{ site.baseurl }}/lessons/16-try-except/)
+[Next Lesson: Pandas →]({{ site.baseurl }}/lessons/18-pandas/)

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 9: Excel Files"
-permalink: /lessons/09-excel-files/
+title: "Lesson 11: Excel Files"
+permalink: /lessons/11-excel-files/
 ---
 
 ## Introduction
@@ -39,7 +39,7 @@ pip3 install openpyxl
 This lesson uses a freely available dataset of fictional student maths scores.
 A sample file is provided for download below.
 
-> **Download sample data:** [student_scores.xlsx]({{ site.baseurl }}/resources/lesson-09/student_scores.xlsx)
+> **Download sample data:** [student_scores.xlsx]({{ site.baseurl }}/resources/lesson-11/student_scores.xlsx)
 
 The spreadsheet has these columns:
 
@@ -158,7 +158,7 @@ ws_out["A1"].font = Font(bold=True)
 ws_out["A1"].fill = PatternFill(fill_type="solid", fgColor="FFFF00")
 ```
 
-> **Download:** [excel_files.py]({{ site.baseurl }}/resources/lesson-09/excel_files.py)
+> **Download:** [excel_files.py]({{ site.baseurl }}/resources/lesson-11/excel_files.py)
 
 ---
 
@@ -178,5 +178,5 @@ ws_out["A1"].fill = PatternFill(fill_type="solid", fgColor="FFFF00")
 
 ---
 
-[← Lesson 8]({{ site.baseurl }}/lessons/08-dictionaries/)
-[Next Lesson: CSV Files →]({{ site.baseurl }}/lessons/09a-csv-files/)
+[← Lesson 10]({{ site.baseurl }}/lessons/10-dictionaries/)
+[Next Lesson: CSV Files →]({{ site.baseurl }}/lessons/12-csv-files/)

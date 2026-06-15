@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 14: Pandas"
-permalink: /lessons/14-pandas/
+title: "Lesson 18: Pandas"
+permalink: /lessons/18-pandas/
 ---
 
 ## Introduction
@@ -36,7 +36,7 @@ pip3 install pandas
 
 This lesson continues with the student scores dataset.
 
-> **Download:** [student_scores.csv]({{ site.baseurl }}/resources/lesson-09a/student_scores.csv)
+> **Download:** [student_scores.csv]({{ site.baseurl }}/resources/lesson-12/student_scores.csv)
 
 ---
 
@@ -138,7 +138,7 @@ df_excel = pd.read_excel("student_scores.xlsx")
 print(df_excel.head())
 ```
 
-> **Download:** [pandas_stats.py]({{ site.baseurl }}/resources/lesson-14/pandas_stats.py)
+> **Download:** [pandas_stats.py]({{ site.baseurl }}/resources/lesson-18/pandas_stats.py)
 
 ---
 
@@ -158,5 +158,5 @@ print(df_excel.head())
 
 ---
 
-[← Lesson 13]({{ site.baseurl }}/lessons/13-requests/)
-[Next Lesson: Pandas Graphs →]({{ site.baseurl }}/lessons/15-pandas-graphs/)
+[← Lesson 17]({{ site.baseurl }}/lessons/17-requests/)
+[Next Lesson: Pandas Graphs →]({{ site.baseurl }}/lessons/19-pandas-graphs/)

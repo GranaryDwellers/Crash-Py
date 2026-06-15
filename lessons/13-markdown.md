@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 10: Markdown"
-permalink: /lessons/10-markdown/
+title: "Lesson 13: Markdown"
+permalink: /lessons/13-markdown/
 ---
 
 ## Introduction
@@ -152,7 +152,7 @@ html = markdown.markdown(text)
 print(html)
 ```
 
-> **Download:** [markdown_example.md]({{ site.baseurl }}/resources/lesson-10/markdown_example.md)
+> **Download:** [markdown_example.md]({{ site.baseurl }}/resources/lesson-13/markdown_example.md)
 
 ---
 
@@ -171,5 +171,5 @@ print(html)
 
 ---
 
-[← Lesson 9a]({{ site.baseurl }}/lessons/09a-csv-files/)
-[Next Lesson: JSON →]({{ site.baseurl }}/lessons/11-json/)
+[← Lesson 12]({{ site.baseurl }}/lessons/12-csv-files/)
+[Next Lesson: JSON →]({{ site.baseurl }}/lessons/14-json/)
