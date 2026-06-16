@@ -61,6 +61,13 @@ print(2 ** 8)   # Exponentiation → 256
 
 ### Step 3 — The `math` module
 
+> **What is a library?**  A *library* (also called a *module*) is a collection
+> of pre-written code that you can use in your own programs.  Python comes with
+> a large *standard library* of modules covering maths, file handling, dates,
+> internet access, and much more — all free to use without installing anything
+> extra.  You tell Python to load a module with the `import` keyword.  We will
+> explore how to read library documentation in depth in the next lesson.
+
 Python's built-in `math` module provides many useful functions:
 
 ```python
@@ -229,4 +236,4 @@ z = int("42")   # 42 — works on numeric strings too
 ---
 
 [← Lesson 2]({{ site.baseurl }}/lessons/02-functions/)
-[Next Lesson: The `math` Library →]({{ site.baseurl }}/lessons/04-math-library/)
+[Next Lesson: Docstrings →]({{ site.baseurl }}/lessons/04-docstrings/)
