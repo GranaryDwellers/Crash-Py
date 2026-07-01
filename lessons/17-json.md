@@ -172,5 +172,5 @@ structure.
 
 ---
 
-[← Lesson 16]({{ site.baseurl }}/lessons/16-github-pages/)
+[← Project: Manual of Me]({{ site.baseurl }}/lessons/16a-manual-of-me/)
 [Next Lesson: Python Packaging with uv →]({{ site.baseurl }}/lessons/18-uv/)
