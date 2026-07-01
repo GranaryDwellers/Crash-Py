@@ -52,25 +52,28 @@ Python also understands complex numbers, read the [documentation](https://docs.p
 print(5 + 3)    # Addition       → 8
 print(10 - 4)   # Subtraction    → 6
 print(3 * 7)    # Multiplication → 21
-print(15 / 4)   # Division       → 3.75  (always returns float)
-print(15 // 4)  # Floor division → 3     (drops the decimal)
-print(15 % 4)   # Modulo         → 3     (remainder)
-print(2 ** 8)   # Exponentiation → 256
+print(15 / 4)   # Division       → 3.75  
+print(15 // 4)      
+print(15 % 4)    
+print(2 ** 8)   
 ```
 
-> **Key point:** `/` always gives a `float`.  `//` gives an `int` (rounded
-> *down*).
+#### Exercise
 
+- Write / copy the above print functions and run them
+- What do each ot these lines do? Write the explanation as a comment.
+   - `print(15 // 4)`
+   - `print(15 % 4)`
+   - `print(2 ** 8)`
+- What data type is the result of each of the calculations?
+   - Write your answer in the line comment
+- Copy and paste the above, then change the first operand to a float.
+   - What type is each calculation now? 
 ---
 
 ### Step 3 — The `math` module
 
-> **What is a library?**  A *library* (also called a *module*) is a collection
-> of pre-written code that you can use in your own programs.  Python comes with
-> a large *standard library* of modules covering maths, file handling, dates,
-> internet access, and much more — all free to use without installing anything
-> extra.  You tell Python to load a module with the `import` keyword.  We will
-> explore how to read library documentation in depth in the next lesson.
+**What is a library?**  A *library* (also called a *module*) is a collection of pre-written code that you can use in your own programs.  Python comes with a large [*standard library*](https://docs.python.org/3/library/index.html) of modules covering maths, file handling, dates, internet access, and much more — all free to use without installing anything extra.  You tell Python to load a module with the `import` keyword.  We will explore how to read library documentation in depth in the next lesson.
 
 Python's built-in `math` module provides many useful functions:
 
@@ -86,7 +89,7 @@ print(math.fabs(-7))      # 7.0 — absolute value
 
 The math library is a built in library. Further details are available from the [math library documentation](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
 
-The lowest common multiple of 6 and 9 is 3. use the library to write a print statement to print this out.
+
 
 ---
 
@@ -99,7 +102,7 @@ Pythagoras' theorem states that for a right-angled triangle:
 So the hypotenuse `c` is `√(a² + b²)`.
 
 ```python
-import math
+import math #Should already be at the top of your file
 
 def hypotenuse(a, b):
     """Return the length of the hypotenuse given the two shorter sides."""
@@ -217,9 +220,10 @@ z = int("42")   # 42 — works on numeric strings too
 2. What is `7 % 3`?  What does the modulo operator tell you in practical terms
    — A leap year is divisible by 4 except for century years, which are not leap years. Write a function to check if a year is a leap year.
 3. Rewrite the hypotenuse function to return the answer correct to 2 decimal places (hint: look in the documentation for the math module)
-4. What happens when you try `math.sqrt(-1)`?
-   - Python has a `cmath` (complex
-   math) module — can you find out how to compute complex square roots?
+4. The lowest common multiple of 6 and 9 is 3. Use the math library to write a print statement to display this.
+5. What happens when you try `math.sqrt(-1)`?
+   - Python has a `cmath` [(complex math) module](https://docs.python.org/3/library/cmath.html) in the standard library. Write a print statement that displays the square root of -5. 
+   - Hint remember to 'import cmath' at the top of the file.
 
 ---
 

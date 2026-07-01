@@ -6,6 +6,9 @@ permalink: /lessons/04-docstrings/
 
 ## Introduction
 
+Create a new file named `grade.py`
+
+
 ### What this lesson is about
 
 A *docstring* is a string placed immediately after a `def` statement (or at
@@ -58,7 +61,7 @@ help(hypotenuse)
 
 `help()` is the built-in function you will use throughout this course to look
 up what any function does — whether it is a function you wrote or one from a
-library.
+library. You should focus on typing it for the next few lessons. However; its contents will also be available when you type a function using visual studio code.
 
 ---
 
@@ -68,34 +71,26 @@ Longer functions benefit from a multi-line docstring.  The first line is a
 brief summary; a blank line follows; then a fuller description:
 
 ```python
-def letter_grade(score):
-    """Return the letter grade for a numeric score out of 100.
+def percent_grade(score, total):
+    """Return the percentage for a numeric score out of 100.
 
-    Uses the standard UK grading scale:
-        A*: 90–100, A: 80–89, B: 70–79, C: 60–69, D: 50–59, U: 0–49.
 
     Parameters
     ----------
-    score : int or float
-        The numeric score to convert (expected range 0–100).
+    total: int or float
+        The numeric total of marks available on a paper.
+    score: int or float
+        The numeric score to convert (expected range 0-total).
+
 
     Returns
     -------
-    str
-        A single letter grade (e.g. "A", "B", "U").
+    float:
+        A percentage of the total 75.0.
     """
-    if score >= 90:
-        return "A*"
-    elif score >= 80:
-        return "A"
-    elif score >= 70:
-        return "B"
-    elif score >= 60:
-        return "C"
-    elif score >= 50:
-        return "D"
-    else:
-        return "U"
+    percent = score / total
+    percent *= 100
+    return percent
 ```
 
 > **Style note:** The "Parameters / Returns" layout above follows the
@@ -104,6 +99,9 @@ def letter_grade(score):
 > [Google style](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods)
 > is another common alternative.  Either is fine — consistency matters more
 > than which style you choose.
+
+- Write a print statement to calculate a percentage of 76/80. As you write the function, observe the behaviour of  visual studio code, trying to help you.
+- Explain what the line `percent *= 100` does.
 
 ---
 
@@ -115,12 +113,14 @@ A docstring at the very top of a `.py` file documents the whole module:
 """Grade calculation utilities for maths mark schemes.
 
 This module provides functions for converting numeric scores to
-letter grades and computing class statistics.
+percentages, letter grades and computing class statistics.
 """
 
-def letter_grade(score):
-    ...
+def letter_grade(percentage):
+    pass
 ```
+
+
 
 ---
 
@@ -136,6 +136,17 @@ help(math.sqrt)
 Python is printing `math.sqrt.__doc__`.  In the next lesson you will use this
 extensively to explore the `math` module.  Writing docstrings for your own
 code gives it the same discoverability.
+
+### Step 6 - File layout
+
+A python script file should follow a certain format that makes it easy to follow for all readers.
+
+> import statements
+> classes (don't worry about this yet)
+> functions
+> statements
+
+Organise this file and your future files in this order.
 
 ---
 
