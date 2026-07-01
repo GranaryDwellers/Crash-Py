@@ -219,7 +219,11 @@ Your manual is live — now make it your own.  These ideas are open-ended.
 3. Ask a colleague to read your manual and tell you one thing that surprised
    them.  Update the manual based on what they say.
 4. Change the `theme:` in `_config.yml` to another GitHub Pages theme such as
-   `jekyll-theme-cayman`.  Push and compare the look.
+   `jekyll-theme-cayman`.  Push and compare the look.  You can browse the full
+   list of built-in themes at
+   [pages.github.com/themes](https://pages.github.com/themes/), and the complete
+   set of supported themes is documented at
+   [GitHub Docs — Supported themes](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll#supported-themes).
 5. Share the link with a colleague and invite them to write their own Manual of
    Me.  How could a whole department benefit from having one each?
 6. Could students write a "Manual of Me" too, to help you understand how they

@@ -31,10 +31,10 @@ All lesson code examples are available to download so you can run them yourself.
 | [4](lessons/04-docstrings) | Docstrings and Code Documentation | Docstrings, `help()`, function documentation, `__doc__` |
 | [6](lessons/06-strings) | Strings | String manipulation and formatting |
 | [7](lessons/07-text-files) | Text Files | Opening, reading, and writing files |
-| [7a](lessons/07a-sieve-of-eratosthenes) | Project — Sieve of Eratosthenes | Guided project: prime numbers, lists, writing results to a text file |
 | [8](lessons/08-lists) | Lists | Lists and `for … in` loops |
 | [9](lessons/09-decisions) | Decisions | `if`, `elif`, `else`, booleans (`True`/`False`), `and`/`or`/`not` |
 | [10](lessons/10-for-loops) | For Loops with Range | `range()`, iteration patterns |
+| [10a](lessons/10a-sieve-of-eratosthenes) | Project — Sieve of Eratosthenes | Guided project: implement an algorithm using lists, ranges and text files to find every prime up to 1,000,000 |
 | [11](lessons/11-dictionaries) | Dictionaries | Key-value data structures |
 | [12](lessons/12-csv-files) | CSV Files | Reading and writing `.csv` |
 | [13](lessons/13-excel-files) | Excel Files | Reading and writing `.xlsx` with `openpyxl` |

@@ -170,5 +170,5 @@ This is equivalent to the loop above but shorter.
 
 ---
 
-[← Project: Sieve of Eratosthenes]({{ site.baseurl }}/lessons/07a-sieve-of-eratosthenes/)
+[← Lesson 6]({{ site.baseurl }}/lessons/07-text-files/)
 [Next Lesson: Decisions →]({{ site.baseurl }}/lessons/09-decisions/)

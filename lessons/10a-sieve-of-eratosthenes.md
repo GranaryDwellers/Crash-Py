@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Lesson 7a: Project — Sieve of Eratosthenes"
-permalink: /lessons/07a-sieve-of-eratosthenes/
+title: "Lesson 10a: Project — Sieve of Eratosthenes"
+permalink: /lessons/10a-sieve-of-eratosthenes/
 ---
 
 ## About this project
@@ -14,9 +14,21 @@ open-ended ideas to explore once it works.
 The goal: find **every prime number from 1 to 1,000,000** and save them all to a
 plain-text file, one per line.
 
-By the time you reach the end you will have combined two things you already
-know — numbers (Lesson 3) and text files (Lesson 7) — into a real, useful
-program that produces a genuine data file.
+By the time you reach the end you will have combined several things you already
+know — numbers (Lesson 3, *Mathematical Operations*), lists and `for` loops
+(Lesson 8, *Lists*), the `range()` function (Lesson 10, *For Loops with Range*),
+and text files (Lesson 7, *Text Files*) — into a real, useful program that
+produces a genuine data file.
+
+### The learning objective
+
+The real point of this project is not the primes themselves — it is learning to
+follow and implement an **algorithm**.  An algorithm is simply a precise,
+step-by-step recipe for solving a problem: a fixed sequence of instructions
+that, if you follow them exactly, always produces the right answer.  A cooking
+recipe is an everyday algorithm; the *Sieve of Eratosthenes* is a mathematical
+one.  By the end of this project you will have taken an algorithm described in
+plain English and turned it, step by step, into working Python code.
 
 ---
 
@@ -24,7 +36,8 @@ program that produces a genuine data file.
 
 A script called `sieve.py` that:
 
-1. Uses the *Sieve of Eratosthenes* algorithm to find all primes up to a limit.
+1. Uses the *Sieve of Eratosthenes* **algorithm** (a step-by-step recipe,
+   explained below) to find all primes up to a limit.
 2. Writes those primes to `primes.txt`, one number per line.
 3. Prints a short summary (how many primes it found, and how long it took).
 
@@ -39,10 +52,13 @@ computer is good at.
 
 You should already be comfortable with:
 
-- Numbers and arithmetic operators — Lesson 3.
-- Writing to a text file with `with open(...)` — Lesson 7.
-- Lists and `for` loops — Lessons 8 and 10 help, but this project introduces
-  the small amount you need as you go.
+- Numbers and arithmetic operators — Lesson 3 (*Mathematical Operations*).
+- Lists, and reading list items by their index — Lesson 8 (*Lists*).
+- `for` loops and the `range()` function — Lesson 10 (*For Loops with Range*).
+- Writing to a text file with `with open(...)` — Lesson 7 (*Text Files*).
+
+This project brings all four of those together, so it sits after the lessons on
+lists and ranges rather than earlier in the course.
 
 Create a new folder for the project and open it in VS Code:
 
@@ -80,9 +96,9 @@ represent "crossed out" with a list of `True`/`False` flags.
 
 ### Step 1 — Set up the list of flags
 
-We use a list of booleans called `is_prime`, one entry per number from 0 up to
-`limit`.  We start by *assuming* every number is prime (`True`), then cross out
-the ones that are not.
+We use a **list** of booleans (`True`/`False` values) called `is_prime`, with one
+entry for every number from 0 up to `limit`.  We start by *assuming* every
+number is prime (`True`), then cross out the ones that are not.
 
 ```python
 limit = 1_000_000
@@ -94,8 +110,23 @@ is_prime[0] = False
 is_prime[1] = False
 ```
 
-`[True] * (limit + 1)` builds a list of `limit + 1` copies of `True`.  The `+ 1`
-means the list has valid indexes all the way up to `limit` itself.
+> **Recap: lists and indexes**
+>
+> A **list** (Lesson 8, *Lists*) is an ordered collection of values.  Each value
+> has a position number called its **index**, and Python counts indexes from
+> **0**, not 1.  So in the list `["a", "b", "c"]` the value `"a"` is at index 0,
+> `"b"` at index 1, and `"c"` at index 2.  You read a value with square
+> brackets: `my_list[0]` gives `"a"`.
+>
+> The clever trick in this project is that we use *the number itself as the
+> index*.  `is_prime[7]` tells us whether the number 7 is still prime, and
+> `is_prime[7] = False` crosses 7 out.  Storing information at the index that
+> matches the number is what makes the sieve so fast.
+
+`[True] * (limit + 1)` builds a list of `limit + 1` copies of `True`.  We use
+`limit + 1` rather than `limit` because indexes start at 0: to have a valid
+index all the way up to `limit` itself (index `1_000_000`), the list needs
+`1_000_001` entries.
 
 Notice `1_000_000` — Python lets you put underscores in numbers to make them
 readable.  It means exactly the same as `1000000`.
@@ -128,7 +159,7 @@ Two details worth understanding:
 ### Step 3 — Collect the primes into a list
 
 After the sieve has run, the primes are every index whose flag is still `True`.
-Gather them into a new list using a list comprehension.
+Gather them into a new list using a list comprehension (Lesson 8, *Lists*).
 
 ```python
 primes = [n for n in range(2, limit + 1) if is_prime[n]]
@@ -144,8 +175,8 @@ compact way to build a list.  Read the line above as: "collect `n` for every
 
 ### Step 4 — Write the primes to a text file
 
-This is where Lesson 7 pays off.  Open a file in write mode and write each prime
-on its own line, followed by the newline character `\n`.
+This is where Lesson 7 (*Text Files*) pays off.  Open a file in write mode and
+write each prime on its own line, followed by the newline character `\n`.
 
 ```python
 with open("primes.txt", "w") as f:
@@ -155,8 +186,8 @@ with open("primes.txt", "w") as f:
 print("Primes written to primes.txt")
 ```
 
-Remember from Lesson 7 that `"w"` creates the file (or overwrites it) and that
-`\n` starts a new line, so each prime ends up on its own line.
+Remember from Lesson 7 (*Text Files*) that `"w"` creates the file (or overwrites
+it) and that `\n` starts a new line, so each prime ends up on its own line.
 
 ---
 
@@ -165,6 +196,12 @@ Remember from Lesson 7 that `"w"` creates the file (or overwrites it) and that
 One million numbers is enough that the speed of the sieve is worth measuring.
 Python's built-in `time` module can tell you how many seconds a block of code
 took.
+
+Why bother timing it?  Because a measurement is the only way to know whether a
+*change* to your code actually made it faster.  If you later rewrite the
+algorithm (see the Explore section), you can compare the new time against this
+one and see, objectively, whether you improved it or made it worse.  "It feels
+faster" is a guess; a number of seconds is evidence.
 
 ```python
 import time
@@ -241,7 +278,7 @@ Saved to primes.txt in 0.35 seconds.
 Open `primes.txt` in VS Code.  It should begin `2`, `3`, `5`, `7`, `11`, … and
 end with `999983` — the largest prime below one million.
 
-> **Download:** [sieve.py]({{ site.baseurl }}/resources/lesson-07a/sieve.py)
+> **Download:** [sieve.py]({{ site.baseurl }}/resources/lesson-10a/sieve.py)
 > — the complete project script.
 
 ---
@@ -257,8 +294,8 @@ no single right answer.
    100,000–200,000, and so on).  Do primes get rarer as numbers get larger?
 3. Write the primes to the file separated by commas on a single line instead of
    one per line.  Which format would be easier for another program to read back?
-4. Read `primes.txt` back in (Lesson 7) and find the largest gap between two
-   consecutive primes below one million.
+4. Read `primes.txt` back in (Lesson 7, *Text Files*) and find the largest gap
+   between two consecutive primes below one million.
 5. Time the sieve for limits of 100,000, 1,000,000, and 10,000,000.  How does the
    time grow as the limit gets bigger?
 6. The classic sieve uses a lot of memory for very large limits.  Research the
@@ -266,5 +303,5 @@ no single right answer.
 
 ---
 
-[← Lesson 7: Text Files]({{ site.baseurl }}/lessons/07-text-files/)
-[Next Lesson: Lists →]({{ site.baseurl }}/lessons/08-lists/)
+[← Lesson 10: For Loops with Range]({{ site.baseurl }}/lessons/10-for-loops/)
+[Next Lesson: Dictionaries →]({{ site.baseurl }}/lessons/11-dictionaries/)

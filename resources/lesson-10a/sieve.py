@@ -1,4 +1,4 @@
-# Lesson 7a - Project: Sieve of Eratosthenes
+# Lesson 10a - Project: Sieve of Eratosthenes
 # Find every prime number from 1 to 1,000,000 and save them to primes.txt.
 # Run this script with:  python3 sieve.py
 
