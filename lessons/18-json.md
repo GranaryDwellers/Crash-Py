@@ -172,5 +172,5 @@ structure.
 
 ---
 
-[← Lesson 17]({{ site.baseurl }}/lessons/17-github-pages/)
+[← Project: Manual of Me]({{ site.baseurl }}/lessons/17a-manual-of-me/)
 [Next Lesson: Code Reuse with Modules →]({{ site.baseurl }}/lessons/19-uv/)

@@ -180,4 +180,4 @@ git push
 ---
 
 [← Lesson 16]({{ site.baseurl }}/lessons/16-github/)
-[Next Lesson: JSON →]({{ site.baseurl }}/lessons/18-json/)
+[Next: Project — Manual of Me →]({{ site.baseurl }}/lessons/17a-manual-of-me/)

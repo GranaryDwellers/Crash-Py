@@ -193,4 +193,4 @@ print("Times table saved.")
 ---
 
 [← Lesson 6]({{ site.baseurl }}/lessons/06-strings/)
-[Next Lesson: Lists →]({{ site.baseurl }}/lessons/08-lists/)
+[Next: Project — Sieve of Eratosthenes →]({{ site.baseurl }}/lessons/07a-sieve-of-eratosthenes/)

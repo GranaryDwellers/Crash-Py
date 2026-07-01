@@ -31,6 +31,7 @@ All lesson code examples are available to download so you can run them yourself.
 | [4](lessons/04-docstrings) | Docstrings and Code Documentation | Docstrings, `help()`, function documentation, `__doc__` |
 | [6](lessons/06-strings) | Strings | String manipulation and formatting |
 | [7](lessons/07-text-files) | Text Files | Opening, reading, and writing files |
+| [7a](lessons/07a-sieve-of-eratosthenes) | Project — Sieve of Eratosthenes | Guided project: prime numbers, lists, writing results to a text file |
 | [8](lessons/08-lists) | Lists | Lists and `for … in` loops |
 | [9](lessons/09-decisions) | Decisions | `if`, `elif`, `else`, booleans (`True`/`False`), `and`/`or`/`not` |
 | [10](lessons/10-for-loops) | For Loops with Range | `range()`, iteration patterns |
@@ -41,6 +42,7 @@ All lesson code examples are available to download so you can run them yourself.
 | [15](lessons/15-git) | Version Control with Git | Installing Git, staging, commits, repository history |
 | [16](lessons/16-github) | GitHub — Remote Repositories and Collaboration | Remotes, pushing, pulling, GitHub repositories |
 | [17](lessons/17-github-pages) | GitHub Pages — Publishing Your Classroom Blog | GitHub Pages, Jekyll config, publishing a static site |
+| [17a](lessons/17a-manual-of-me) | Project — Manual of Me | Guided project: publishing a Markdown guide for colleagues with GitHub Pages |
 | [18](lessons/18-json) | JSON | JSON format, lists and dicts, marksheets |
 | [19](lessons/19-uv) | Code Reuse with Modules | Imports, writing modules, `if __name__ == "__main__":`, script entry points |
 | [20](lessons/20-unit-testing) | Unit Testing | Testing with `pytest` |
