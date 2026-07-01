@@ -179,5 +179,5 @@ print(d)
 
 ---
 
-[← Lesson 9]({{ site.baseurl }}/lessons/09-for-loops/)
+[← Project: Sieve of Eratosthenes]({{ site.baseurl }}/lessons/09a-sieve-of-eratosthenes/)
 [Next Lesson: CSV Files →]({{ site.baseurl }}/lessons/11-csv-files/)

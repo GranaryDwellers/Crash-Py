@@ -167,4 +167,4 @@ print(primes)
 ---
 
 [← Lesson 8]({{ site.baseurl }}/lessons/08-decisions/)
-[Next Lesson: Dictionaries →]({{ site.baseurl }}/lessons/10-dictionaries/)
+[Next: Project — Sieve of Eratosthenes →]({{ site.baseurl }}/lessons/09a-sieve-of-eratosthenes/)

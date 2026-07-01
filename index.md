@@ -34,6 +34,7 @@ All lesson code examples are available to download so you can run them yourself.
 | [7](lessons/07-lists) | Lists | Lists and `for … in` loops |
 | [8](lessons/08-decisions) | Decisions | `if`, `elif`, `else`, booleans (`True`/`False`), `and`/`or`/`not` |
 | [9](lessons/09-for-loops) | For Loops with Range | `range()`, iteration patterns |
+| [9a](lessons/09a-sieve-of-eratosthenes) | Project — Sieve of Eratosthenes | Guided project: implement an algorithm using lists, ranges and text files to find every prime up to 1,000,000 |
 | [10](lessons/10-dictionaries) | Dictionaries | Key-value data structures |
 | [11](lessons/11-csv-files) | CSV Files | Reading and writing `.csv` |
 | [12](lessons/12-excel-files) | Excel Files | Reading and writing `.xlsx` with `openpyxl` |
@@ -41,6 +42,7 @@ All lesson code examples are available to download so you can run them yourself.
 | [14](lessons/14-git) | Version Control with Git | Installing Git, staging, commits, repository history |
 | [15](lessons/15-github) | GitHub — Remote Repositories and Collaboration | Remotes, pushing, pulling, GitHub repositories |
 | [16](lessons/16-github-pages) | GitHub Pages — Publishing Your Classroom Blog | GitHub Pages, Jekyll config, publishing a static site |
+| [16a](lessons/16a-manual-of-me) | Project — Manual of Me | Guided project: publishing a Markdown guide for colleagues with GitHub Pages |
 | [17](lessons/17-json) | JSON | JSON format, lists and dicts, marksheets |
 | [18](lessons/18-uv) | Python Packaging with uv | Packages, virtual environments, `uv`, `pyproject.toml`, `requirements.txt` |
 | [19](lessons/19-code-reuse) | Code Reuse with Modules | Imports, modules, `if __name__ == "__main__":`, script entry points |
