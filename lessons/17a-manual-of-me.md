@@ -160,12 +160,6 @@ colleagues.
 Save the file and preview it in VS Code with `Ctrl Shift V` (or `⌘ Shift V` on a
 Mac) to check that the headings and table look right.
 
-> **Download:** [manual.md]({{ site.baseurl }}/resources/lesson-17a/manual.md)
-> — the template above, ready to edit.
-
-> **Download:** [index.md]({{ site.baseurl }}/resources/lesson-17a/index.md)
-> — the matching home page.
-
 ---
 
 ### Step 5 — Commit and push
