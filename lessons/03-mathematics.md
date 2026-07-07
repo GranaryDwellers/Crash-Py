@@ -98,6 +98,8 @@ Pythagoras' theorem states that for a right-angled triangle:
 
 So the hypotenuse `c` is `√(a² + b²)`.
 
+Replace the `pass` statement with the function to do this. 
+
 ```python
 import math
 
@@ -135,7 +137,7 @@ Correct the fnction to make it work
 
 ### Step 6 — Order of operations
 
-Python follows standard BODMAS / BIDMAS rules.  Use parentheses to be explicit:
+Python follows standard BODMAS / BIDMAS / PEMDAS rules.  Use parentheses to be explicit:
 
 ```python
 print(2 + 3 * 4)    # 14  (multiplication first)
@@ -218,8 +220,8 @@ z = int("42")   # 42 — works on numeric strings too
    — A leap year is divisible by 4 except for century years, which are not leap years. Write a function to check if a year is a leap year.
 3. Rewrite the hypotenuse function to return the answer correct to 2 decimal places (hint: look in the documentation for the math module)
 4. What happens when you try `math.sqrt(-1)`?
-   - Python has a `cmath` (complex
-   math) module — can you find out how to compute complex square roots?
+   - Python has a `cmath` (complex math) module — can you find out how to compute complex square roots?
+   - print the square root of -1
 
 ---
 
