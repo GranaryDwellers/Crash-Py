@@ -32,9 +32,9 @@ A docstring is a string literal (usually using triple quotes) placed on the
 first line of a function body:
 
 ```python
-def hypotenuse(a, b):
+import math          # Always put import statements at the top of a file, do not repeat them 
+def hypotenuse(a, b): # Always put functions after import statements, but before other statements, keep functions together
     """Return the length of the hypotenuse given the two shorter sides."""
-    import math
     return math.sqrt(a**2 + b**2)
 ```
 
@@ -118,6 +118,8 @@ This module provides functions for converting numeric scores to
 letter grades and computing class statistics.
 """
 
+import math
+
 def letter_grade(score):
     ...
 ```
@@ -151,6 +153,7 @@ code gives it the same discoverability.
    (assuming your module is called `grade.py`) and open the resulting HTML file.
 5. Research the difference between a *docstring* and a *comment* (`#`).  When
    would you use each?
+6. Go back and organise your mathematics file. From this point forward keep your files organised.
 
 ---
 
