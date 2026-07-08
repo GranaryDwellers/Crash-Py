@@ -171,4 +171,4 @@ This is equivalent to the loop above but shorter.
 ---
 
 [← Lesson 6]({{ site.baseurl }}/lessons/06-text-files/)
-[Next Lesson: Decisions →]({{ site.baseurl }}/lessons/08-decisions/)
+[Next Lesson: Booleans and Logic →]({{ site.baseurl }}/lessons/08-booleans/)
