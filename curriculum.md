@@ -13,7 +13,16 @@ IT should be taught in the context of the lessons that directly concern the tool
 Python is a textual programming language. A non textual programming language such as scratch can be used to graphically introduce a number of key points, but is not included here.
 
 Data structures include:
-- lists
-- dictionaries
-- 
+- lists - [lesson 7](https://github.com/GranaryDwellers/Crash-Py/blob/main/lessons/07-lists)
+     - lists are also known as arrays
+- dictionaries - [lesson 10](https://github.com/GranaryDwellers/Crash-Py/blob/main/lessons/10-dictionaries)
+- tables - not explicitly covered, although a table can be thought of as a special case of a dictionary.
+
+- Prodecures and functions are similar in python
+    - A function has a return value
+    - A procedure is a function that does not return a value
+    - these are covered in [lesson 2](https://github.com/GranaryDwellers/Crash-Py/blob/main/lessons/02-functions)
+ 
+
+
 
