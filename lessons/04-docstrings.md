@@ -51,7 +51,7 @@ def hypotenuse(a, b): # Always put functions after import statements, but before
 The triple-quoted string is not assigned to a variable — Python automatically
 stores it as the function's `__doc__` attribute.
 
-1) When you call this fucntion - what effect does the docstring have?
+1) When you call this function - what effect does the docstring have?
 2) What does the `+=` operator do? [hint](https://docs.python.org/3/reference/simple_stmts.html#augmented-assignment-statements)
 
 ---
@@ -120,8 +120,17 @@ def letter_grade(score):
 > is another common alternative.  Either is fine — consistency matters more
 > than which style you choose.
 
-1) Research numpy and google conventions for doc strings, choose one and only one for the mathematics.py file
-2) Add docstrings to all functions in the style chosen.
+1) The example above purposely uses things we haven't learned about yet.  But it should still be readable. Without writing the code out - What do you expect the output to be if the score was:
+    a) 89
+    b) 90.6
+    c) 102
+    d) -5
+    e) 95.5
+    f) "4"
+    g) None
+
+2) Research [numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) and [google](https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-docstrings) conventions for doc strings.  Choose one and only one for the mathematics.py file
+3) Add docstrings to all functions in the style chosen.
 
 Through the rest of the course you should add doc strings to each function.
 
@@ -148,7 +157,7 @@ def letter_grade(score):
 1) Why might these docstrings be useful to a programmer?
 2) add a module docstring to the `mathematics.py` file (a file is called a module in python)
 
-Throughout this course module docstrings should only be added if a module is to be imported.
+Throughout this course module docstrings should be added if a module is to be imported.
 
 ---
 
