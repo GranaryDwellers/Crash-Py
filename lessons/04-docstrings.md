@@ -28,37 +28,50 @@ on.
 
 ### Step 1 — Your first docstring
 
+We will continue with the `mathematics.py` file you created last lesson in this lesson.
+
 A docstring is a string literal (usually using triple quotes) placed on the
 first line of a function body:
 
+Example:
+
 ```python
-import math          # Always put import statements at the top of a file, do not repeat them 
+import math          # Always put import statements at the top of a file, do not repeat them
+
+def square(number):
+    return (number * number)
+
 def hypotenuse(a, b): # Always put functions after import statements, but before other statements, keep functions together
     """Return the length of the hypotenuse given the two shorter sides."""
-    return math.sqrt(a**2 + b**2)
+    result = square(a)
+    result += square(b)
+    return math.sqrt(result)
 ```
 
 The triple-quoted string is not assigned to a variable — Python automatically
 stores it as the function's `__doc__` attribute.
 
+1) When you call this fucntion - what effect does the docstring have?
+2) What does the `+=` operator do? [hint](https://docs.python.org/3/reference/simple_stmts.html#augmented-assignment-statements)
+
 ---
 
 ### Step 2 — Reading a docstring
 
+Example:
+
 ```python
 print(hypotenuse.__doc__)
-# Return the length of the hypotenuse given the two shorter sides.
 
 help(hypotenuse)
-# Help on function hypotenuse in module __main__:
-#
-# hypotenuse(a, b)
-#     Return the length of the hypotenuse given the two shorter sides.
 ```
 
 `help()` is the built-in function you will use throughout this course to look
 up what any function does — whether it is a function you wrote or one from a
 library.
+
+1) Try the example code.
+2) When typing the fuction - does visual studio code do anything as you are typing. You will need to keep an eye on the screen as you type.
 
 ---
 
@@ -66,6 +79,8 @@ library.
 
 Longer functions benefit from a multi-line docstring.  The first line is a
 brief summary; a blank line follows; then a fuller description:
+
+Example: (do not type this out, just for reading)
 
 ```python
 def letter_grade(score):
@@ -105,12 +120,18 @@ def letter_grade(score):
 > is another common alternative.  Either is fine — consistency matters more
 > than which style you choose.
 
+1) Research numpy and google conventions for doc strings, choose one and only one for the mathematics.py file
+2) Add docstrings to all functions in the style chosen.
+
+Through the rest of the course you should add doc strings to each function.
+
 ---
 
 ### Step 4 — Module-level docstrings
 
 A docstring at the very top of a `.py` file documents the whole module:
 
+Example:
 ```python
 """Grade calculation utilities for maths mark schemes.
 
@@ -124,33 +145,21 @@ def letter_grade(score):
     ...
 ```
 
----
+1) Why might these docstrings be useful to a programmer?
+2) add a module docstring to the `mathematics.py` file (a file is called a module in python)
 
-### Step 5 — Why docstrings matter for libraries
-
-Every function in Python's standard library has a docstring.  When you type:
-
-```python
-import math
-help(math.sqrt)
-```
-
-Python is printing `math.sqrt.__doc__`.  In the next lesson you will use this
-extensively to explore the `math` module.  Writing docstrings for your own
-code gives it the same discoverability.
+Throughout this course module docstrings should only be added if a module is to be imported.
 
 ---
 
 ## Explore
 
-1. Add docstrings to the `hypotenuse`, `shorter_side`, and `is_right_triangle`
-   functions you wrote in Lesson 3.  Run `help()` on each.
-2. What happens if you call `help()` on a function that has no docstring?
-3. Look up the docstring for `print` by running `help(print)`.  What does the
+1. What happens if you call `help()` on a function that has no docstring?
+2. Look up the docstring for `print` by running `help(print)`.  What does the
    `sep` parameter do?
+3. Look up the docstring for `math.sqrt()`. 
 4. Python's [`pydoc`](https://docs.python.org/3/library/pydoc.html) tool can
-   generate HTML documentation from docstrings.  Run `python -m pydoc -w grade`
-   (assuming your module is called `grade.py`) and open the resulting HTML file.
+   generate HTML documentation from docstrings.  Run `python -m pydoc -w mathematics` (assuming your file is named `mathematics.py`) and open the resulting HTML file.
 5. Research the difference between a *docstring* and a *comment* (`#`).  When
    would you use each?
 6. Go back and organise your mathematics file. From this point forward keep your files organised.
