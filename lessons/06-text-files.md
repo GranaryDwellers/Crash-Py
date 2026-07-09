@@ -61,6 +61,10 @@ print("File written.")
 > files.  These are all called **escape sequences**: a backslash followed by a
 > letter that represents an invisible or hard-to-type character.
 
+1) create a new file called files.py
+2) write a program that creates a new file called notes.txt and writes "Line one\n" to it
+3) write a program that reads the file notes.txt and prints the contents
+
 ---
 
 ### Step 2 — The `with` statement
@@ -92,6 +96,7 @@ released reliably.
 See the official documentation for more detail:
 [docs.python.org — The `with` statement](https://docs.python.org/3/reference/compound_stmts.html#the-with-statement)
 
+1) rewrite the previous exercises procedures using the `with` statement
 ---
 
 ### Step 3 — Reading an entire file
@@ -110,6 +115,10 @@ print(contents)
 > is documented at:
 > [docs.python.org — File Objects](https://docs.python.org/3/glossary.html#term-file-object)
 
+1) download [Pride and Prejudice](https://www.gutenberg.org/files/1342/1342-0.txt) from Project Gutenberg, save it as `pride_and_prejudice.txt`
+2) Write a function that reads the file `pride_and_prejudice.txt` and counts the number of lines, then write a print statement to display the result
+3) Write a program that reads the file `pride_and_prejudice.txt` and counts the number of words, then write a print statement to display the result
+
 ---
 
 ### Step 4 — Reading line by line
@@ -122,6 +131,8 @@ with open("notes.txt", "r") as f:
 
 This approach is memory-efficient for large files because it reads one line at
 a time.
+
+1) Write a function that reads the file `pride_and_prejudice.txt` reads it line by line and prints each line in which a bennet sister is mentioned by the narrator.
 
 ---
 
@@ -139,21 +150,12 @@ print(lines[0].strip())  # Line one
 Notice that each string in the list ends with `\n` — the newline character that
 marks the end of each line in the file.  Calling `.strip()` removes it.
 
----
-
-### Step 6 — Appending to a file
-
-```python
-with open("notes.txt", "a") as f:   # "a" = append mode
-    f.write("Line four\n")
-```
-
-`"a"` adds content to the *end* of the file without erasing what is already
-there.
+1) Write a function that reads the file `pride_and_prejudice.txt` and returns a list of all the lines in the file that contain the word "elizabeth". Print the result.
 
 ---
 
-### Step 7 — A practical example: saving a times table
+
+### Step 6 — A practical example: saving a times table
 
 ```python
 def save_times_table(n, filename):
@@ -165,30 +167,23 @@ def save_times_table(n, filename):
 save_times_table(7, "seven_times_table.txt")
 print("Times table saved.")
 ```
-
+1) Write a function that saves a times table to a file. The function should take the number to multiply by and the filename as parameters.
 ---
 
 ### Sample file
 
-> **Download:** [sample.txt]({{ site.baseurl }}/resources/lesson-05/sample.txt)
+> **Download:** [sample.txt]({{ site.baseurl }}/resources/lesson-06/sample.txt)
 > — a plain-text file containing a short poem, for practice.
 
-> **Download:** [text_files.py]({{ site.baseurl }}/resources/lesson-05/text_files.py)
+> **Download:** [text_files.py]({{ site.baseurl }}/resources/lesson-06/text_files.py)
 
 ---
 
 ## Explore
 
-1. Write a program that reads `sample.txt` and counts how many lines are in it.
-2. Write a program that reads `sample.txt` and prints only lines that contain
-   the word "the" (case-insensitive).
-3. Write a function `word_count(filename)` that returns the number of words
-   in a text file.  Hint: split each line on spaces.
-4. What happens if you open a file in `"w"` mode that already has content?
-   Write an experiment to find out.
-5. Write a program that takes a list of student names and scores and saves them
-   to a file with one entry per line, e.g. `"Alice: 87"`.  Then write a second
-   program that reads that file back and prints the name of the highest scorer.
+1) Write a function that takes a list of student names and scores and saves them
+   to a file with one entry per line, e.g. `"Alice, 87"`.  
+2) Write a function that reads that file back and adds the letter grade using the grade function example from the strings lesson.
 
 ---
 

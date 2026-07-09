@@ -16,6 +16,12 @@ editing lessons in `lessons/`.
 - `## Introduction` sets out *what* the lesson covers and *why* it matters
   (typically with `### What this lesson is about` and `### Why you need this`).
 - `## Do` gives guided, step-by-step practical activities (`### Step 1`, etc.).
+  - Each step should include numbered exercise tasks (1), 2), 3), etc.) that guide
+    learners through hands-on coding practice.
+  - Tasks should be practical and build on the code examples shown in the step.
+  - Where relevant, add explanatory notes to help learners connect new concepts
+    to previously learned material (e.g., noting that list indexing works like
+    string indexing).
 - `## Explore` ends the lesson with open-ended questions and experiments.
 
 ### Project lessons
@@ -50,6 +56,12 @@ editing lessons in `lessons/`.
   must **not** contain Jekyll front matter, otherwise Jekyll renders them as site
   pages instead of serving them as downloads — show front-matter templates inline
   in a code block instead.
+- Python resource files should follow this organization order:
+  1. Module docstring (if the module is to be imported)
+  2. Import statements
+  3. Classes
+  4. Functions
+  5. Statements (code that runs when the file is executed)
 
 ## Keeping Docs In Sync
 
@@ -62,3 +74,5 @@ following in step (dedicated maintainer agents exist for each):
   (see `.github/agents/readme-maintainer.agent.md`).
 - The pedagogy conventions in this `AGENTS.md`
   (see `.github/agents/agents-md-maintainer.agent.md`).
+- The downloadable resource files in `resources/lesson-NN/`
+  (see `.github/agents/lesson-resources-maintainer.agent.md`).
