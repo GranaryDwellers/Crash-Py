@@ -38,6 +38,9 @@ print(is_weekday)        # True
 print(has_finished_marking)  # False
 ```
 
+1) Try using a lower case 'true' or 'false' what happens?
+
+
 ---
 
 ### Step 2 — Comparisons produce booleans
@@ -53,6 +56,7 @@ These operators compare two values and return either `True` or `False`.
 | `<` | less than | `2 < 7` |
 | `<=` | less than or equal to | `2 <= 2` |
 
+Example: 
 ```python
 print(5 == 5)   # True
 print(5 != 3)   # True
@@ -61,6 +65,27 @@ print(7 <= 7)   # True
 ```
 
 > **Common mistake:** `=` assigns a value, but `==` compares two values.
+
+There are other comparason operators.
+
+```python
+a = 5
+b = 5
+c = a
+
+d = [1,2,3,4,5,6]
+e = [a, b, c]
+
+```
+
+Using the above variables, predict, then try then explain each of the following.
+
+1) What is the result of `a == b`
+2) What is the result of `a is b`
+3) What is the result of `a is c`
+4) What is the result of `type(a) is type(b)`
+5) What is the result of `a in d`
+6) What is the result of `a in e`
 
 ---
 
@@ -85,10 +110,23 @@ combinations.
 | `True` | `False` |
 | `False` | `True` |
 
+Example: 
 ```python
 is_absent = False
 print(not is_absent)  # True
 ```
+
+To generate the truth table for this we can use the following sequence.
+```python
+booleans = [True, False]
+header = "|`a`|`not a`|"  # note the backtick is not the same as a single quote.
+print (header)
+print ("|----|----|")
+for a in booleans:
+    print (f"|{a}|{not a}|")
+```
+
+1) Write the above as a procedure called `truth_table_not`. A procedure is a function without a return function. call the procedure. 
 
 ---
 
@@ -123,6 +161,8 @@ Python does not have an `xor` keyword, but with booleans you can write it as
 | `True` | `False` | `True` |
 | `True` | `True` | `False` |
 
+Example
+
 ```python
 passed_exam = True
 completed_coursework = False
@@ -131,6 +171,10 @@ print(passed_exam and completed_coursework)  # False
 print(passed_exam or completed_coursework)   # True
 print(passed_exam != completed_coursework)   # True
 ```
+
+1) Write a procedure which outputs the truth table for and
+2) Write a procedure which outputs the truth table for or
+3) Write a procedure which outputs the truth table for xor
 
 ---
 
@@ -149,6 +193,7 @@ build from operators you already know.
 | `True` | `False` | `True` | `False` |
 | `True` | `True` | `False` | `False` |
 
+Example:
 ```python
 logged_in = True
 is_admin = False
@@ -156,6 +201,8 @@ is_admin = False
 print(not (logged_in and is_admin))  # nand -> True
 print(not (logged_in or is_admin))   # nor -> False
 ```
+
+1) Write a procedure to output the truth table for `nand` and `nor` as above.
 
 ---
 
@@ -174,6 +221,7 @@ print(score >= 70 != (attendance >= 95)) # True
 
 The result of each comparison is a boolean, and then `and`, `or`, `not`, or an
 `xor` expression combines them.
+
 
 ---
 
@@ -199,16 +247,11 @@ In the next lesson you will use booleans like these inside `if`, `elif`, and
 
 ## Explore
 
-1. Write three comparisons that each produce `True`, then three that produce
-   `False`.
-2. Make a truth table for `not (a != b)`.  What familiar test is this equivalent
-   to?
-3. Write a boolean expression that is `True` only when a score is between 40 and
+1. Write a boolean expression that is `True` only when a score is between 40 and
    59 inclusive.
-4. Suppose `has_pen = False` and `has_pencil = True`.  What do `has_pen or
+2. Suppose `has_pen = False` and `has_pencil = True`.  What do `has_pen or
    has_pencil`, `has_pen and has_pencil`, and `has_pen != has_pencil` produce?
-5. Research Python's `^` operator on booleans.  How does it compare with using
-   `!=` for `xor`?
+3. Research Python's [`^` operator](https://docs.python.org/3/library/stdtypes.html#bitwise-operations-on-integer-types) on booleans.  How does it compare with using `!=` for `xor`?
 
 ---
 
