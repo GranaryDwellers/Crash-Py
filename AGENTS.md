@@ -16,7 +16,7 @@ editing lessons in `lessons/`.
 - `## Introduction` sets out *what* the lesson covers and *why* it matters
   (typically with `### What this lesson is about` and `### Why you need this`).
 - `## Do` gives guided, step-by-step practical activities (`### Step 1`, etc.).
-  - Each step should include numbered exercise tasks (1), 2), 3), etc.) that guide
+  - Each step should include numbered exercise tasks (as an ordered list) that guide
     learners through hands-on coding practice.
   - Tasks should be practical and build on the code examples shown in the step.
   - Where relevant, add explanatory notes to help learners connect new concepts

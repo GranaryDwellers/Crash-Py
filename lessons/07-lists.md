@@ -33,8 +33,8 @@ mixed = [1, "hello", 3.14, True]   # Lists can mix types
 empty = []
 ```
 
-1) Create a new file named `lists.py` for this lesson
-2) Create a list of your 5 favorite movie titles as strings, assigned to a variable named `movies`
+1. Create a new file named `lists.py` for this lesson
+2. Create a list of your 5 favorite movie titles as strings, assigned to a variable named `movies`
 
 
 ---
@@ -51,9 +51,9 @@ print(len(scores))  # 5  — number of elements
 ```
 This is the same concept as strings, but now we're working with sequences of items instead of individual characters.
 
-1) Print the length of your movie list
-2) Print the first and last movie titles in your list
-3) Print the middle movie title(s) in your list
+1. Print the length of your movie list
+2. Print the first and last movie titles in your list
+3. Print the middle movie title(s) in your list
 
 ---
 
@@ -68,10 +68,10 @@ last = scores.pop()     # Remove and return the last element
 print(scores)
 ```
 
-1) Add a new movie to the end of your list, print the updated list
-2) Add a new movie to the beginning of your list, print the updated list
-3) Remove a movie from your list, print the updated list
-4) Remove the last movie from your list, print the updated list
+1. Add a new movie to the end of your list, print the updated list
+2. Add a new movie to the beginning of your list, print the updated list
+3. Remove a movie from your list, print the updated list
+4. Remove the last movie from your list, print the updated list
 
 ---
 
@@ -87,11 +87,11 @@ print(sorted(numbers))    # [1, 1, 2, 3, 4, 5, 6, 9]  — returns new sorted lis
 numbers.sort()            # sorts in place (modifies the original)
 print(numbers)
 ```
-1) Print the sum of the numbers
-2) Print the minimum and maximum values
-3) Print the sorted list
-4) Sort the list in place and print it
-5) Explain what `sorted()` does vs `sort()`
+1. Print the sum of the numbers
+2. Print the minimum and maximum values
+3. Print the sorted list
+4. Sort the list in place and print it
+5. Explain what `sorted()` does vs `sort()`
 ---
 
 ### Step 5 — `for … in` loop
@@ -105,8 +105,8 @@ for name in names:
 
 The loop variable (`name`) takes the value of each element in turn.
 
-1) Create a loop that prints each movie title in your list
-2) Create a loop that prints each movie title in your list with an index number prefix (e.g., "1. Movie Title")
+1. Create a loop that prints each movie title in your list
+2. Create a loop that prints each movie title in your list with an index number prefix (e.g., "1. Movie Title")
 
 ---
 
@@ -122,9 +122,9 @@ for score in scores:
 average = total / len(scores)
 print(f"Average score: {average:.1f}")
 ```
-1) Calculate and print the average score
-2) Find and print the highest score
-3) Find and print the lowest score
+1. Calculate and print the average score
+2. Find and print the highest score
+3. Find and print the lowest score
 ---
 
 ### Step 7 — Combining lists and functions
@@ -139,9 +139,9 @@ def highest(numbers):
 class_scores = [72, 85, 91, 68, 77, 88, 95, 60]
 
 ```
-1) Calculate and print the average score of `class_scores`
-2) Find and print the highest score in `class_scores`
-3) Find and print the lowest score in `class_scores`
+1. Calculate and print the average score of `class_scores`
+2. Find and print the highest score in `class_scores`
+3. Find and print the lowest score in `class_scores`
 ---
 
 ### Step 8 — Building a list with a loop
@@ -156,7 +156,7 @@ print(squares)
 # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
-1) Create a list of the cubes of numbers 1 to 5 using a loop
+1. Create a list of the cubes of numbers 1 to 5 using a loop
 
 
 ---
@@ -172,7 +172,7 @@ print(squares)
 
 This is equivalent to the loop above but shorter.
 
-1) Create a list of the cubes of even numbers from 1 to 10 using a list comprehension
+1. Create a list of the cubes of even numbers from 1 to 10 using a list comprehension
 
 > **Download:** [lists.py]({{ site.baseurl }}/resources/lesson-07/lists.py)
 

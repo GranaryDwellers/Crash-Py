@@ -38,7 +38,7 @@ print(is_weekday)        # True
 print(has_finished_marking)  # False
 ```
 
-1) Try using a lower case 'true' or 'false' what happens?
+1. Try using a lower case 'true' or 'false' what happens?
 
 
 ---
@@ -80,12 +80,12 @@ e = [a, b, c]
 
 Using the above variables, predict, then try then explain each of the following.
 
-1) What is the result of `a == b`
-2) What is the result of `a is b`
-3) What is the result of `a is c`
-4) What is the result of `type(a) is type(b)`
-5) What is the result of `a in d`
-6) What is the result of `a in e`
+1. What is the result of `a == b`
+1. What is the result of `a is b`
+1. What is the result of `a is c`
+1. What is the result of `type(a) is type(b)`
+1. What is the result of `a in d`
+1. What is the result of `a in e`
 
 ---
 
@@ -126,7 +126,7 @@ for a in booleans:
     print (f"|{a}|{not a}|")
 ```
 
-1) Write the above as a procedure called `truth_table_not`. A procedure is a function without a return function. call the procedure. 
+1. Write the above as a procedure called `truth_table_not`. A procedure is a function without a return function. call the procedure. 
 
 ---
 
@@ -172,9 +172,9 @@ print(passed_exam or completed_coursework)   # True
 print(passed_exam != completed_coursework)   # True
 ```
 
-1) Write a procedure which outputs the truth table for and
-2) Write a procedure which outputs the truth table for or
-3) Write a procedure which outputs the truth table for xor
+1. Write a procedure which outputs the truth table for and
+1. Write a procedure which outputs the truth table for or
+1. Write a procedure which outputs the truth table for xor
 
 ---
 
@@ -202,7 +202,7 @@ print(not (logged_in and is_admin))  # nand -> True
 print(not (logged_in or is_admin))   # nor -> False
 ```
 
-1) Write a procedure to output the truth table for `nand` and `nor` as above.
+1. Write a procedure to output the truth table for `nand` and `nor` as above.
 
 ---
 
