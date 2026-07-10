@@ -36,9 +36,9 @@ multi-line string."""
 
 Use triple quotes for text that spans more than one line.
 
-1) Create a new file called `strings.py` in the `resources/lesson-05` directory.
-2) Add the code from the examples above to the file.
-3) Add print statements to print the values of the variables.
+1. Create a new file called `strings.py` in the `resources/lesson-05` directory.
+2. Add the code from the examples above to the file.
+3. Add print statements to print the values of the variables.
 
 ---
 
@@ -52,8 +52,8 @@ message = first + ", " + second + "!"
 line = "-" * 30
 ```
 
-1) Add the code from the examples above to the file.
-2) Add print statements to print the values of the variables. What do you notice?
+1. Add the code from the examples above to the file.
+2. Add print statements to print the values of the variables. What do you notice?
 
 ---
 
@@ -70,8 +70,8 @@ print(f"{name} scored {score:.1f}%")       # Alice scored 87.0%
 print(f"Double her score: {score * 2}")    # Double her score: 174
 ```
 
-1) Add a function that takes a name and score as parameters and returns a formatted string using an f-string.  Remember functions should go above statements in the file.
-2) Call the function with different values and print the result.
+1. Add a function that takes a name and score as parameters and returns a formatted string using an f-string.  Remember functions should go above statements in the file.
+2. Call the function with different values and print the result.
 
 ---
 
@@ -91,8 +91,8 @@ print(text.strip().endswith("!"))        # True
 
  ```
 
-1) Write a function that accepts a string and returns it with leading and trailing whitespace removed, and all characters converted to lowercase.
-2) Call the function with different values and print the result.
+1. Write a function that accepts a string and returns it with leading and trailing whitespace removed, and all characters converted to lowercase.
+2. Call the function with different values and print the result.
    - Example: `process_text("  Hello, World!  ")` should return `"hello, world!"`
 
 ---
@@ -110,8 +110,8 @@ print(rejoined)        # Alice | 87 | A
 
 This example uses a list data type which has not been covered yet, but it demonstrates the concept of joining a list of strings into a single string.
 
-1) Write a function that takes a CSV line (like "Alice,87,A") and returns a formatted string with the values separated by dashes (like "Alice - 87 - A").
-2) Call the function with 3 different values and print the result.
+1. Write a function that takes a CSV line (like "Alice,87,A") and returns a formatted string with the values separated by dashes (like "Alice - 87 - A").
+2. Call the function with 3 different values and print the result.
 
 ---
 
@@ -131,9 +131,9 @@ print(word[2:8:2])    # tea, start at index 2 and go up to (but not including) i
 print(len(word))    # 11  — number of characters
 ```
 
-1) Write a function that takes a string and returns the first 3 characters, the last 3 characters, and the length of the string.
-2) Call the function with different values and print the result.
-3) Use slicing to extract the substring "them" from "Mathematics".
+1. Write a function that takes a string and returns the first 3 characters, the last 3 characters, and the length of the string.
+2. Call the function with different values and print the result.
+3. Use slicing to extract the substring "them" from "Mathematics".
 
 ---
 
@@ -166,8 +166,8 @@ print("Score: " + str(score))   # Score: 95
 # Or use an f-string:
 print(f"Score: {score}, Grade: {grade}")
 ```
-1) Write a function that takes a score and a grade and returns a formatted string with the score and grade.
-2) Call the function with different values and print the result.
+1. Write a function that takes a score and a grade and returns a formatted string with the score and grade.
+2. Call the function with different values and print the result.
 
 > **Download:** [strings.py]({{ site.baseurl }}/resources/lesson-05/strings.py)
 

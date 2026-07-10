@@ -61,9 +61,9 @@ print("File written.")
 > files.  These are all called **escape sequences**: a backslash followed by a
 > letter that represents an invisible or hard-to-type character.
 
-1) create a new file called files.py
-2) write a program that creates a new file called notes.txt and writes "Line one\n" to it
-3) write a program that reads the file notes.txt and prints the contents
+1. create a new file called files.py
+2. write a program that creates a new file called notes.txt and writes "Line one\n" to it
+3. write a program that reads the file notes.txt and prints the contents
 
 ---
 
@@ -96,7 +96,7 @@ released reliably.
 See the official documentation for more detail:
 [docs.python.org — The `with` statement](https://docs.python.org/3/reference/compound_stmts.html#the-with-statement)
 
-1) rewrite the previous exercises procedures using the `with` statement
+1. rewrite the previous exercises procedures using the `with` statement
 ---
 
 ### Step 3 — Reading an entire file
@@ -115,9 +115,9 @@ print(contents)
 > is documented at:
 > [docs.python.org — File Objects](https://docs.python.org/3/glossary.html#term-file-object)
 
-1) download [Pride and Prejudice](https://www.gutenberg.org/files/1342/1342-0.txt) from Project Gutenberg, save it as `pride_and_prejudice.txt`
-2) Write a function that reads the file `pride_and_prejudice.txt` and counts the number of lines, then write a print statement to display the result
-3) Write a program that reads the file `pride_and_prejudice.txt` and counts the number of words, then write a print statement to display the result
+1. download [Pride and Prejudice](https://www.gutenberg.org/files/1342/1342-0.txt) from Project Gutenberg, save it as `pride_and_prejudice.txt`
+2. Write a function that reads the file `pride_and_prejudice.txt` and counts the number of lines, then write a print statement to display the result
+3. Write a program that reads the file `pride_and_prejudice.txt` and counts the number of words, then write a print statement to display the result
 
 ---
 
@@ -132,7 +132,7 @@ with open("notes.txt", "r") as f:
 This approach is memory-efficient for large files because it reads one line at
 a time.
 
-1) Write a function that reads the file `pride_and_prejudice.txt` reads it line by line and prints each line in which a bennet sister is mentioned by the narrator.
+1. Write a function that reads the file `pride_and_prejudice.txt` reads it line by line and prints each line in which a bennet sister is mentioned by the narrator.
 
 ---
 
@@ -150,7 +150,7 @@ print(lines[0].strip())  # Line one
 Notice that each string in the list ends with `\n` — the newline character that
 marks the end of each line in the file.  Calling `.strip()` removes it.
 
-1) Write a function that reads the file `pride_and_prejudice.txt` and returns a list of all the lines in the file that contain the word "elizabeth". Print the result.
+1. Write a function that reads the file `pride_and_prejudice.txt` and returns a list of all the lines in the file that contain the word "elizabeth". Print the result.
 
 ---
 
@@ -167,7 +167,7 @@ def save_times_table(n, filename):
 save_times_table(7, "seven_times_table.txt")
 print("Times table saved.")
 ```
-1) Write a function that saves a times table to a file. The function should take the number to multiply by and the filename as parameters.
+1. Write a function that saves a times table to a file. The function should take the number to multiply by and the filename as parameters.
 ---
 
 ### Sample file
@@ -181,9 +181,9 @@ print("Times table saved.")
 
 ## Explore
 
-1) Write a function that takes a list of student names and scores and saves them
+1. Write a function that takes a list of student names and scores and saves them
    to a file with one entry per line, e.g. `"Alice, 87"`.  
-2) Write a function that reads that file back and adds the letter grade using the grade function example from the strings lesson.
+2. Write a function that reads that file back and adds the letter grade using the grade function example from the strings lesson.
 
 ---
 
