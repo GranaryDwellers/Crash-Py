@@ -121,13 +121,13 @@ def letter_grade(score):
 > than which style you choose.
 
 1. The example above purposely uses things we haven't learned about yet.  But it should still be readable. Without writing the code out - What do you expect the output to be if the score was:
-    a) 89
-    b) 90.6
-    c) 102
-    d) -5
-    e) 95.5
-    f) "4"
-    g) None
+    1. 89
+    2. 90.6
+    3. 102
+    4. -5
+    5. 95.5
+    6. "4"
+    7. None
 
 2. Research [numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) and [google](https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-docstrings) conventions for doc strings.  Choose one and only one for the mathematics.py file
 3. Add docstrings to all functions in the style chosen.
